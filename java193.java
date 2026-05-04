@@ -18,7 +18,7 @@ public class java193 {//good questions
         for(int i=0;i<jobsinfo.length;i++ ){
             jobs.add( new Job(i, jobsinfo[i][0],jobsinfo[i][1]));
         }
-        Collections.sort(jobs,(a,b)->b.profit-a.profit);//descending order sorting 
+        Collections.sort(jobs,(a,b)->b.profit-a.profit);//descending order of profit
         ArrayList<Integer> seq = new ArrayList<>();
         int time =0;
         for(int i= 0;i<jobs.size();i++){

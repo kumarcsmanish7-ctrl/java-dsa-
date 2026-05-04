@@ -18,7 +18,7 @@ public class java192 {//indian coins
         System.out.println("total min coins used:"+countcoins);
         for(int i=0;i<ans.size();i++){
             System.out.print(ans.get(i)+" ");
-        }
+        } 
         System.out.println();
     }
 }
