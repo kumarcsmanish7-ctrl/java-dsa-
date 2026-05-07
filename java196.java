@@ -18,7 +18,7 @@ public class java196 {
 
         return Math.max(lh,rh)+1;
     } 
-
+    
     public static int count(Node root){
         if(root == null)return 0;
         int lcount = count(root.left);
