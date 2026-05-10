@@ -1,6 +1,6 @@
 public class java67{
     public static void printSubarrays(int numbers[]){
-        int ts=0;
+    int ts=0;
        for(int i =0; i<numbers.length;i++){
         int start=i;
         for (int j = i ;j<numbers.length;j++){
