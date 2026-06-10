@@ -9,7 +9,8 @@ public class java210 {
             int x = arr.size()-1;// child index
             int par = (x-1)/2;// parent index
 
-            while(x>0 && arr.get(x)<arr.get(par)){// O(logn) // x>0 because root node doesn't try to compare with itself
+            while(x>0 && arr.get(x)<arr.get(par)){// to make maxheap change here arr.get(x)>arr.get(par)
+                // O(logn) // x>0 because root node doesn't try to compare with itself
                 // swap
                 int temp =arr.get(x);
                 arr.set(x, arr.get(par));
@@ -28,10 +29,11 @@ public class java210 {
             int left = 2*i+1;
             int right = 2*i+2;
             int min = i ; 
-            if(left<arr.size()&& arr.get(min)>arr.get(left)){//left<arr.size() -- check for whether it is a leaf node or not 
+            if(left<arr.size()&& arr.get(min)>arr.get(left)){// to make maxheap change here arr.get(min)<arr.get(left)
+                //left<arr.size() -- check for whether it is a leaf node or not 
                 min = left;
             }
-            if(right<arr.size()&& arr.get(min)>arr.get(right)){
+            if(right<arr.size()&& arr.get(min)>arr.get(right)){// to make maxheap change here arr.get(min)<arr.get(right)
                 min = right;
             }
             if(i != min){
@@ -70,7 +72,7 @@ public class java210 {
         h.add(4);
         h.add(5);
         h.add(5);
-        while(!h.isEmpty()){
+        while(!h.isEmpty()){// heap sort - O(nlogn)
             System.out.println(h.peek());
             h.remove();
         }

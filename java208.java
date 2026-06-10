@@ -9,7 +9,7 @@ public class java208 {
 
 //order is not fixed , priority matters
         pq.add(3);//O(logn)
-        pq.add(1);
+        pq.add(1); 
         pq.add(7);
         pq.add(4);
 

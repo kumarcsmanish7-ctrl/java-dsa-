@@ -22,15 +22,17 @@ public class java211 {
             heapify(arr,maxIdx, size);
         }
     }
-    public static void heapSort(int arr[]){
+    public static void heapSort(int arr[]){//O(nlogn)
         // step 1 - build maxHeap 
         int n = arr.length;
         for(int i = n/2;i>=0;i--){
+            //O(nlogn)
             heapify(arr, i,n);// for index i and size n 
         }
 
         // step 2 - push largest at end 
         for(int i = n-1; i>0;i--){
+            //O(nlogn)
             // swap( largest-first , with last index)
             swap(arr[0],arr[i]);
 
