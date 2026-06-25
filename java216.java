@@ -21,8 +21,17 @@ public class java216 {
         System.out.println(hm.containsKey("India"));//true
         System.out.println(hm.containsKey("Indonasia"));//false
 
-        //remove 
-        System.out.println(hm.remove("china"));
-        System.out.println(hm);
+        //remove -O(n)
+        System.out.println(hm.remove("china"));//150 returning value
+        System.out.println(hm.remove("indonasia"));//null returning value
+        System.out.println(hm); 
+
+
+        //size
+        System.out.println(hm.size());
+
+        //isEmpty
+        System.out.println(hm.isEmpty());//false 
+        hm.clear();//clears everything in the hashmap
     }
 }

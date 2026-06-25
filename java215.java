@@ -16,8 +16,8 @@ public class java215 {
             
         }
     }
-    public static void main(String args[]){
-        int arr[] = {1,3,-1,-3,5,3,6,7};
+    public static void main(String args[]){// O(nlogk )   see the deque way to use this -- O(n) -- important 
+         int arr[] = {1,3,-1,-3,5,3,6,7};
         int k =3;// window size
         int res[] = new int[arr.length-k+1];
 
