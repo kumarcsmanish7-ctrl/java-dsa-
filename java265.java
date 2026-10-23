@@ -37,7 +37,7 @@ public class java265 {//articulation point
     // main code is in this dfs function 
     //O(V+E)
     public static void dfs(ArrayList<edge>graph[],int curr, int par,
-                            int dt[],int low[],int time, boolean vis[]){
+                            int dt[],int low[],int time, boolean vis[],boolean ap[]){
             
         vis[curr]=true;
         dt[curr]=low[curr]=++time;
@@ -55,17 +55,20 @@ public class java265 {//articulation point
             }
             //neighbour not visited 
             else{
-                dfs(graph,neigh,curr,dt,low,time,vis);//curr->neigh,par->curr
+                dfs(graph,neigh,curr,dt,low,time,vis,ap);//curr->neigh,par->curr
                 low[curr] = Math.min(low[curr],low[neigh]);
                 if(par!=-1 && dt[curr]<= low[curr]){
-                    System.out.println("Ap: "+curr);
+                    // System.out.println("Ap: "+curr);
+                    //instead of printing 
+                    ap[curr] = true;
                 }
                 children++;
             }
         }
         //after loop completion check condition 1 
         if(par==-1 && children>1){
-            System.out.println("Ap: "+ curr);
+            // System.out.println("Ap: "+ curr);
+            ap[curr]=true;
         }
 
 
@@ -76,10 +79,17 @@ public class java265 {//articulation point
         int low[] =new int[V];
         int time = 0 ;
         boolean vis[] = new boolean[V];
+        //tarjan algorithm can print the same articulation point multiple times so we make a articulationpoint array to track this similar to visited array
+        boolean ap[] = new boolean[V];
 
         for(int i = 0;i<V;i++){
             if(!vis[i]){
-                dfs(graph,i,-1,dt,low,time,vis);
+                dfs(graph,i,-1,dt,low,time,vis,ap);
+            }
+        }
+        for(int i = 0;i<V;i++){
+            if(ap[i]){
+                System.out.println("Ap: "+i);
             }
         }
 
@@ -89,6 +99,7 @@ public class java265 {//articulation point
        ArrayList<edge> graph[] = new ArrayList[V];
        createGraph(graph);
        getAp(graph,V);
+
        
        
       
