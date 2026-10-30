@@ -11,7 +11,6 @@ public class java272{//memorization
         int ans = 0 ;
         for(int i =0; i<=n-1;i++){
             ans+= catalanmem(i,dp)*catalanmem(n-i-1,dp);
-            dp[i] =ans;
         }
         return dp[n]=ans;
 
