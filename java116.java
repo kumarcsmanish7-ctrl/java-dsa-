@@ -24,6 +24,7 @@ abstract class Animal{
     //making a constructor inside abstract class 
     String color ; 
     Animal(){
+        System.out.println("animal constructor called");
         color = "brown";
     }
 
@@ -50,7 +51,7 @@ class Horse extends Animal{
 
 class Mustang extends Horse{
     Mustang() {
-        System.out.println("")
+        System.out.println("");
 
     }
 }
