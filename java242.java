@@ -41,7 +41,7 @@ public class java242 {//detect cycles for directed graph
 
     }
 
-    public static boolean isCycle(ArrayList<edge>[] graph){
+    public static boolean isCycle(ArrayList<edge>[] graph){//O(V+E)
         boolean vis[] = new boolean[graph.length];
         boolean stack[] = new boolean[graph.length];
 

@@ -17,6 +17,7 @@ public class java226 {
 
 
         System.out.println("union = "+ set.size());
+        //to print the union elements we can print the element in the set
 
 
         // intersection 
@@ -30,6 +31,7 @@ public class java226 {
             if(set.contains(arr2[i])){
                 count++;
                 set.remove(arr2[i]);
+                // we can print the intersection elements by printing the values as we remove them 
             }
         }
         System.out.println("intersection ="+count);

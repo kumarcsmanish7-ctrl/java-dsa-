@@ -80,7 +80,8 @@ public class java237 {// longest word with all prefixes
         if(root ==null){
             return;
         }
-        for(int i =0;i<26;i++){
+        for(int i =0;i<26;i++){// to get opposite of lexographic order , just reverse the loop
+            //for(i=25 to i=0)
             if(root.children[i]!= null && root.children[i].eow == true){
                 char ch = (char)(i+'a');
                 temp.append(ch);

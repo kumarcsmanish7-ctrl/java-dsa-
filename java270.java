@@ -1,5 +1,6 @@
 import java.util.*;
 public class java270 {
+    //O(n*m)
     public static boolean wildcard(String s,String p){
         int n = s.length();
         int m = p.length();

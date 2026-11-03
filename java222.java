@@ -16,6 +16,16 @@ public class java222 {
         if(set.contains(2)){
             System.out.println("set contains");
         }
+        //set.size()
+        System.out.println(set.size());
+
+        //set.clear() -- whose set becomes clear or empty
+        set.clear();
+        System.out.println(set.size());
+
+        //set.is empty
+        System.out.println(set.isEmpty());
+
         
 
     }

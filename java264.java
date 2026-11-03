@@ -58,7 +58,7 @@ public class java264 {//tarjan algorithm
 
                     //bridge condition 
                     if(dt[curr]<low[neigh]){
-                        System.out.println("Bridge"+ curr+"--->"+neigh);
+                        System.out.println("Bridge"+ curr+"---    "+neigh);
                     }
                 }
                 else{// neighbour is already visited 

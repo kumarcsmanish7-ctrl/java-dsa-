@@ -33,6 +33,8 @@ public class java244 {//detect cycles for directed graph
 
     }
 
+
+    //exponential time complexity
     public static void printAllPath(ArrayList<edge> graph[], int src, int dest, String path){
         if(src == dest){
             System.out.println(path+dest);

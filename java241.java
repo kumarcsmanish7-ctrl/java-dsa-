@@ -67,7 +67,8 @@ public class java241 {
             return false ;
     }
 
-
+    //if there are no cycles in graph then it is a bipartite graph
+    // O(V+E)
     public static boolean isBipartite(ArrayList<edge>[] graph){
         int color[] = new int[graph.length];
         for(int i =0;i<color.length;i++){

@@ -13,6 +13,10 @@ public class java217{
 
         for( String k : keys){
             System.out.println("key="+k+",value ="+map.get(k));
+
+
         }
+
+        //hm.entrySet()    this can be used to call the pairs at once 
     }
 }

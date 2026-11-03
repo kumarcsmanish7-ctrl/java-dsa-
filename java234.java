@@ -30,7 +30,8 @@ public class java234 {// prefix problem
         curr.eow = true;
     }
 
-    public static void findPrefix(Node root, String ans){// we are making a recursive function on the root not on the word 
+    public static void findPrefix(Node root, String ans){//O(L) longest word
+        // we are making a recursive function on the root not on the word 
         //base case 
         if(root== null){
             return ; 

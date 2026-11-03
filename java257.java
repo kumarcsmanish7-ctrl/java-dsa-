@@ -13,7 +13,8 @@ public class java257 {
         if(x==par[x]){
             return x;
         }
-        return find(par[x]);
+        return par[x] = find(par[x]);// we are storing the leader directly by doing this par[x]
+        // as the iteration changes the value of par[x] changes 
     }
 
     public static void union(int a, int b){
@@ -30,6 +31,9 @@ public class java257 {
             par[parA]= parB;
         }
     }
+
+    // we can do one more optimization - path compression - we will store the ancestor here 
+
     public static void main(String args[]){
         init();
         System.out.println(find(3));

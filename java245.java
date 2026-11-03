@@ -52,6 +52,8 @@ public class java245 {//detect cycles for directed graph
         }
     }
 
+    //O(V+ElogV)= because we used priority queue
+    // V - distance loop , ElogV - priority queue pairs sorting 
     public static void dijkstra(ArrayList<edge> graph[],int src){
         int dist[] = new int[graph.length];// dist[i] -> src to i 
         for(int i = 0 ; i<graph.length;i++){

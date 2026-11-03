@@ -1,7 +1,7 @@
 import java.util.*;
 public class java231 {// implementation of tries 
     static class Node {
-        Node children[] = new Node[26];
+        Node children[] = new Node[26]; //'a' - 'z'
         boolean eow = false;
 
         Node(){
@@ -13,7 +13,7 @@ public class java231 {// implementation of tries
 
     public static Node root = new Node();
 
-    public static void insert(String word){
+    public static void insert(String word){ //O(L)
         Node curr = root;
         for(int level=0;level<word.length();level++){
             int idx = word.charAt(level)-'a';

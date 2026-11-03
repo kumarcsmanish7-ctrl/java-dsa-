@@ -2,14 +2,14 @@ public class java92 {
     public static String compress(String str){//o(n)
        String newStr = ""; 
        for(int i =0;i<str.length();i++){
-        Integer count =1;
+        Integer count =1;// because we are using count.toString(); in line 12 ;
         while(i<str.length()-1 && str.charAt(i)==str.charAt(i+1)){
             count++;
             i++;
         }
         newStr+=str.charAt(i);
         if(count>1){
-            newStr+=count.toString();
+            newStr+=count.toString();// making it to integer 
         }
        }
        return newStr;

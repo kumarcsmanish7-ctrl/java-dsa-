@@ -46,7 +46,7 @@ public class java258 {//Kruskal algorithm
         int parB =find(b);
 
     }
-    public static void krushkalsMst(ArrayList<Edge> edges, int V){
+    public static void krushkalsMst(ArrayList<Edge> edges, int V){//O(v+eloge)
         init();
         //sort the edges of the graph 
         Collections.sort(edges);//we get the sorting in ascending order 

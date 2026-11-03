@@ -1,5 +1,5 @@
 import java.util.*;
-public class java268 {
+public class java268 {//O(nm)
     public static int editDistance(String str1,String str2){
         int n = str1.length();
         int m = str2.length();
@@ -18,10 +18,12 @@ public class java268 {
 
         for(int i = 1 ;i<n+1;i++){
             for(int j = 1; j<m+1;j++){
+                //important -- check for i-1,j-1 // because 0 base indexing
                 if(str1.charAt(i-1)==str2.charAt(j-1)){//same
                     dp[i][j]=dp[i-1][j-1];
                 }
                 else{
+                    //min(add,delete,replace)
                     dp[i][j]= (Math.min(dp[i][j-1],Math.min(dp[i-1][j],dp[i-1][j-1])))+1;
                 }
             }

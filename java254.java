@@ -1,4 +1,5 @@
 public class java254 {
+    //O(n*W)
     public static int unboundedKnapsack(int[] val, int[] wt , int W){
         int n = val.length;
         int dp[][] = new int[n+1][W+1];

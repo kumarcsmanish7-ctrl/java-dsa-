@@ -1,6 +1,9 @@
 import java.util.*;
 public class java221 {
     public static boolean isAnagram(String s, String t){
+        if(s.length() !=t.length()){
+            return false;
+        }
         HashMap<Character, Integer> map = new HashMap<>();
         for(int i =0;i<s.length();i++){
             map.put(s.charAt(i),map.getOrDefault(s.charAt(i),0)+1);
@@ -25,7 +28,7 @@ public class java221 {
     }   
     
     public static void main(String args[]){
-        String s = "race";
+        String s = "race"; //O(n) -- n is the size of s and t
         String t = "care";
 
         System.out.println(isAnagram(s,t));

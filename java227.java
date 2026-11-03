@@ -1,5 +1,5 @@
 import java.util.*;
-public class java227 {
+public class java227 {//O(n )
     public static String getStart(HashMap<String,String> tickets){
         //Hashmap that stores in reverse
         HashMap<String,String> revMap = new HashMap<>();

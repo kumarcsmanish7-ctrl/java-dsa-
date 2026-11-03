@@ -14,9 +14,8 @@ public class java273{//tabulation
 
         
     }
-        public static void main(String args[]){
-        int n =4;
-        
+    public static void main(String args[]){
+        int n =4;        
         System.out.println(catalantab(n));
     }
 }

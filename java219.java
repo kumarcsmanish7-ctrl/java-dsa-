@@ -21,6 +21,6 @@ public class java219 {
         tm.put("China", 150);
         tm.put("US", 50);
     
-        System.out.println(tm);
+        System.out.println(tm);//comes in alphabetical order 
     }
 }

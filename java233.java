@@ -43,7 +43,7 @@ public class java233{// word break problem
 
     }
 
-    public static boolean wordBreak(String key){
+    public static boolean wordBreak(String key){ //O(L) L is the key length
         if(key.length()==0){
             return true;
         }

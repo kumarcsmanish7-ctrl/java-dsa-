@@ -13,7 +13,7 @@ public class java256 {
             //accending order 
         }
     }
-    public static int connectCities(int cities[][]){
+    public static int connectCities(int cities[][]){// time complecity is equal to prims algorithm
         PriorityQueue<Edge> pq = new PriorityQueue<>();
         boolean vis[] = new boolean[cities.length];
 

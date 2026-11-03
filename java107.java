@@ -19,7 +19,7 @@ public class java107 {
             System.out.println("constructor is called ...");
         }
         
-        Student(String name){
+        Student(String name){//parameterized constructor
             this.name = name;
         }
         Student(int roll){
